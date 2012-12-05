@@ -11,3 +11,9 @@
  *= require_self
  *= require_tree .
  */
+#wrapper{
+	background: red;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
