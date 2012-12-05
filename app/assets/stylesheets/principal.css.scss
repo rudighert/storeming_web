@@ -9,6 +9,15 @@ body{
 	margin: 0;
 	padding: 0;
 }
+$grid-width: 40px;
+$gutter-width: 10px;
+
+@function grid-width($n) {
+  @return $n * $grid-width + ($n) * $gutter-width;
+}
+
+
+$test: grid-width(10);
 
 #principal_index{
 	display				:	inline-block;
@@ -17,5 +26,8 @@ body{
 
 	h1{
 		color : blue;
+		background-color: black;
+		width: $test;
 	}
 }
+
