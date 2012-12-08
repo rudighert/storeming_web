@@ -1,16 +1,8 @@
-// Place all the styles related to the principal controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-$body_color	: #3bbfce;
+@import "global_variables";
 
-body{
-	font-family: 'Helvetica';
-	background-color: $body_color;
-	margin: 0;
-	padding: 0;
-}
-$grid-width: 40px;
-$gutter-width: 10px;
+
+$grid-width				: 40px;
+$gutter-width			: 10px;
 
 @function grid-width($n) {
   @return $n * $grid-width + ($n) * $gutter-width;
@@ -20,14 +12,13 @@ $gutter-width: 10px;
 $test: grid-width(10);
 
 #principal_index{
-	display				:	inline-block;
-	background-color	:	yellow;
-	width				:	960px;
-
-	h1{
-		color : blue;
-		background-color: black;
-		width: $test;
-	}
+	background-color		:	white;
+	width					:	$wrapper_width;
+	margin-left				: 	auto;
+	margin-right			: 	auto;
+	box-shadow				: 	1px 1px 1px gray;
+	border-radius			: 	10px;
+	min-height				:	400px;
+	
 }
 
