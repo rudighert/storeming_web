@@ -1,0 +1,70 @@
+@import "global_variables";
+//*****************************************************************************************************//
+//****************   Definicón mixin								***********************************//
+//*****************************************************************************************************//
+@mixin background_header{
+	background: #45484d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #45484d 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+
+//*****************************************************************************************************//
+//****************   Definicón del CSS								***********************************//
+//*****************************************************************************************************//
+
+body{
+	font-family			: 'Helvetica';
+	background-color	: $body_color;
+	margin 				: 0;
+	padding 			: 0;
+}
+
+header{
+	@include background_header;
+	
+	position				:	fixed;
+	height 					:	$header_height;
+	text-align				:	center;
+	width					:	100%;
+	z-index					:	999;
+	top						: 	0;
+	#header{	
+		width 				:	$wrapper_width;
+		height 				:	$header_height;
+		margin-left			:	auto;
+		margin-right		: 	auto;
+			
+		.logo{	
+			width 			:	300px;
+			height 			:	$header_height;
+			background 		:	url('/assets/logo_storeming.png') no-repeat;
+			background-size	:	150px;
+		}	
+	
+	}	
+}
+
+footer{
+	@include background_header;
+	color 					:	white;
+	height 					:	300px;
+	margin-top				: 	40px;
+}
+
+#wrapper{
+	background 				:	$wrapper_bg_color;
+	width					: 	100%;
+	position				: 	relative;
+	top						:	($header_height - 20px);
+	z-index					:	0;
+	padding					: 	35px 0px 60px 0px;
+}
+
