@@ -1,0 +1,90 @@
+@import "global_variables";
+//*****************************************************************************************************//
+//****************   Definicón del CSS								***********************************//
+//*****************************************************************************************************//
+
+body{
+	font-family			: 'Helvetica';
+	background-color	: $body_color;
+	margin 				: 0;
+	padding 			: 0;
+}
+
+header{
+
+	
+	position				:	fixed;
+	height 					:	$header_height;
+	text-align				:	center;
+	width					:	100%;
+	z-index					:	999;
+	top						: 	0;
+	#header{	
+		width 				:	$wrapper_width;
+		height 				:	$header_height;
+		margin-left			:	auto;
+		margin-right		: 	auto;
+	}	
+}
+
+footer{
+	color 					:	white;
+	height 					:	300px;
+	margin-top				: 	40px;
+}
+html{
+	background:					url('/assets/bg.png') center center no-repeat;
+	background-size: 	cover;
+	width: 							100%;
+	height: 						100%;
+	text-align: 				center;
+}
+#wrapper{
+	width					: 	100%;
+	position				: 	relative;
+	top						:	($header_height - 20px);
+	z-index					:	0;
+	padding					: 	35px 0px 60px 0px;
+}
+
+.content_logo{
+	text-align: 				left;
+}
+
+.members{
+	font-size: 					0;
+	.list_members{
+		margin: 					0;
+		padding:						0;
+
+		.box_member{
+			width: 					250px;
+			background-color: rgba(255, 255, 255, 0.72);
+			display: 				inline-block;
+			padding: 				20px;
+			font-size: 			14px;
+			text-align: 		center;
+			color: 					black;
+			text-shadow: 		none;
+			border-radius: 	5px;
+			border: 				1px solid gray;
+			margin: 				0 15px;
+			vertical-align: top;
+			min-height: 		405px;
+		}
+		.image_member{
+			img{border-radius:3px}
+		}
+		.info_user{
+			text-align: 	left;
+			.name{
+				font-size: 			16px;
+				font-weight: 		bold;
+				padding: 				5px 0;
+				text-decoration: underline;
+			}
+		}
+
+	}
+}
+		
