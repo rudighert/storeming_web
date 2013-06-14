@@ -32,3 +32,4 @@ gem 'jquery-rails'
 
 # haml gems
 gem 'haml'
+
