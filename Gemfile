@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-
 gem 'rails', '3.2.8'
 
 # Bundle edge Rails instead:
@@ -32,4 +31,8 @@ gem 'jquery-rails'
 
 # haml gems
 gem 'haml'
+
+gem 'compass-rails'
+
+gem "awesome_print"
 
