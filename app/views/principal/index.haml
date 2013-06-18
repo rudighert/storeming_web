@@ -4,16 +4,14 @@
 
   .members
     %ul.list_members
-      -awesome_print @user
       -@user.each do |u|
         %li.box_member
-          .image_member
-            =image_tag u[:image], alt:"rudy"
-          / .info_user
-          /   .name
-          /     =u[:name]
-          /   .details
-          /     =u[:details]
-          / .bottom
-          /   %a.see_cv{href:"#"}
-          /     Ver Curriculum
+          =image_tag u[:image], alt:u[:name], class: "user_image"
+          .info_user
+            .name
+              =u[:name]
+            .details
+              =u[:details]
+          .bottom
+            %a.see_cv{href:"#"}
+              Ver Curriculum

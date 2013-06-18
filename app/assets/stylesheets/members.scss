@@ -2,16 +2,77 @@
 @import "global_variables";
 .members{
   font-size:          0;
-  width:              70%;
+  width:              80%;
+  margin:             300px auto 0 auto;
+
+
   
   .list_members{
     margin:           0;
     padding:            0;
 
+
     .box_member{
-      width:            250px;
-      height:           400px;
-      background-color:  red;
+      width:               350px;
+      height:          570px;
+      background-color:     white;
+      padding:              15px;
+      border:               1px solid rgb(172, 172, 172);
+      cursor:               pointer;
+      overflow-y:           hidden;
+      @include border-radius(4px);
+      @include inline-block;
+      
+      &.only_names{
+        height:             400px;
+      }
+
+
+      .user_image{
+        width:            350px;
+        height:           350px;
+        @include filter(grayscale(0%));
+      }
+
+      &:not(.roundabout-in-focus){
+        .user_image{
+          @include filter(grayscale(100%));
+          &:hover{
+            @include filter(grayscale(50%));
+          }
+        }
+      }
+    }
+
+   
+    .info_user{
+      .name{
+        font-size:        25px;
+        color:            black;
+        text-align:       left;
+        text-shadow:      none;
+        text-decoration:  underline;
+        padding:          15px 0;
+      }
+      .details{
+        font-size:        20px;
+        text-align:       left;
+        font-weight:      lighter;
+        color:            black;
+        @include text-shadow(none);
+      }
+    }
+    .bottom{
+      font-size:          14px;
+      text-align:         right;
+      padding:            15px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      a{
+        color:            #4c8ffd;
+        @include text-shadow(none);
+      }
     }
   }
 }
