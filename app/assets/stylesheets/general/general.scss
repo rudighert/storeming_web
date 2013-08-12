@@ -9,6 +9,7 @@ body{
 	background-color	: $body_color;
 	margin 				: 0;
 	padding 			: 0;
+	@include text-shadow(none);
 }
 
 header{

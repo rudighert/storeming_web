@@ -15,4 +15,8 @@ class PrincipalController < ApplicationController
               }
             ]
   end
+
+  def cv
+    
+  end
 end
