@@ -1,0 +1,56 @@
+@import 'compass';
+@import "global_variables";
+
+$bg_header: #4D4D4D;
+#cv{
+	font-size: 			0;
+
+	.wrapper_cv{
+		width: 		1000px;
+		background-color: white;
+		margin: 	0 auto;
+		@include border-radius(5px);
+	}
+
+	.info_header{
+		color: 						white;
+		background-color: #4D4D4D;
+		padding: 					25px 0;
+		
+		.name_person{
+			font-size: 			25px;
+			padding: 				0;
+		}
+		.profession_person{
+			font-weight: 		lighter;
+			padding:					5px 0;
+			font-size: 				12px;
+		}
+		.first{
+			font-weight: 		lighter;
+		}
+
+		.last{
+			font-weight: 			bold;
+		}
+	}
+
+	.column{
+		@include inline-block;
+		
+		&.left{
+			width: 					300px;
+		}
+		&.right{
+			width: 						700px;
+		}
+	}
+
+	.info_left{
+		font-size: 					12px;
+	}
+
+	.info_right{
+		font-size: 						20px;
+	}
+}
