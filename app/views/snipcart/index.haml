@@ -1,0 +1,30 @@
+-api_key=Rails.env.development? ? "ZWVlODc3MzQtN2JkNC00MTlhLWE0YTUtZDc4NTI1MTlkMTA0" : "NTcyM2U5YTUtMWYwYS00NWJlLWFkYjYtMmEyYTI0Zjg5ODYy"
+%script{type: "text/javascript", id: "snipcart", src:"https://app.snipcart.com/scripts/snipcart.js", data:{"api-key" => "#{api_key}" } }
+=stylesheet_link_tag "https://app.snipcart.com/themes/base/snipcart.css", id: "snipcart-theme"
+
+
+#snipcart
+  %a.snipcart-add-item{href:"#", data:{"item-id" =>"1", "item-name" =>"Bacon", "item-price" =>"3.00", "item-weight" =>"20", "item-url" =>"http://myapp.com/products/bacon", "item-description" =>"Some fresh bacon"} }
+    Articulo de 3.00
+
+  %a.snipcart-add-item{href:"#", data:{"item-id" =>"2", "item-name" =>"Bacon", "item-price" =>"7.00", "item-weight" =>"20", "item-url" =>"http://myapp.com/products/bacon", "item-description" =>"Some fresh bacon"} }
+    Articulo de 7.00
+
+  %a.snipcart-add-item{href:"#", data:{"item-id" =>"3", "item-name" =>"Bacon", "item-price" =>"13.00", "item-weight" =>"20", "item-url" =>"http://myapp.com/products/bacon", "item-description" =>"Some fresh bacon"} }
+    Articulo de 13.00
+
+  %a.snipcart-add-item{href:"#", data:{"item-id" =>"4", "item-name" =>"Bacon", "item-price" =>"332.00", "item-weight" =>"20", "item-url" =>"http://myapp.com/products/bacon", "item-description" =>"Some fresh bacon"} }
+    Articulo de 332.00
+
+
+  %a.snipcart-checkout{href:"#"}
+    Ver el carrito
+
+  %span.snipcart-summary
+    %span
+      Number of items:
+      %span.snipcart-total-items
+    %span
+      Total price:
+      %span.snipcart-total-price
+
