@@ -1,0 +1,29 @@
+@import 'base';
+
+.top_index{
+  background: asset-url('rain2.jpg',image) center center no-repeat;
+  width: 100%;
+  height: 735px;
+  background-size: cover;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+}
+
+.explain{
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  color: black;
+  z-index: 1;
+  position: relative;
+
+  &.page{
+    margin-top: 580px;
+    background: white;
+  }
+
+  &.team{
+
+  }
+}

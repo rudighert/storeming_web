@@ -1,17 +1,7 @@
-#principal_index  
-  .content_logo
-    =image_tag 'logo_storeming.png', width:"500px", height:"200px", alt:"logo"
+%section.top_index
+.explain.page
+  %h1 Storeming
+  %h2 What do you want?
 
-  .members
-    %ul.list_members
-      -@user.each do |u|
-        %li.box_member
-          =image_tag u[:image], alt:u[:name], class: "user_image"
-          .info_user
-            .name
-              =u[:name]
-            .details
-              =u[:details]
-          .bottom
-            %a.see_cv{href:"#"}
-              Ver Curriculum
+.explain.team
+.explain.team
